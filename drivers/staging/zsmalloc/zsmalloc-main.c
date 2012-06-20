@@ -515,7 +515,6 @@ static void zs_copy_unmap_object(char *buf, struct page *firstpage,
 	memcpy(addr, buf + sizes[0], sizes[1]);
 	kunmap_atomic(addr);
 }
-
 static int zs_cpu_notifier(struct notifier_block *nb, unsigned long action,
 				void *pcpu)
 {
